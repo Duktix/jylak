@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="oJR6eRuF9PY4E3HKGnobKLSEbRZq7jgqsyi40k6N">
+    <meta name="csrf-token" content="EnNjiCOjR4JNar0H3mxpuHjWCACNH45fqC1BHvmh">
 
 
 			<title>Our Services</title>
@@ -24,7 +24,7 @@
 <link href="http://www.jylak.in/assets/theme/css/font-awesome.min.css" rel="stylesheet">
 <link href="http://www.jylak.in/assets/theme/snippets-assets/minimalist-basic/content-bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="http://www.jylak.in/assets/theme/css/style.css" rel="stylesheet">
-<link rel="icon" href="http://www.jylak.in/uploads/2019/05/step0002_313089427.png" type="image/png" sizes="16x16">
+<link rel="icon" href="http://www.jylak.in/uploads/2019/05/Untitled-2_970235327.png" type="image/png" sizes="16x16">
 <style>
 	.navbar-custom{
 		background-color:rgba(179,171,175,0);
@@ -36,9 +36,6 @@
     z-index: 1030;
 	background-color: transparent;
 	}
-	.is-wrapper .is-section:first-child{
-		padding-top:120px;
-	}	
 
 .navbar-toggle{
 	background-color:rgba(0,0,0,1);
@@ -74,10 +71,15 @@
 	.navbar-collapse{
 		background-color:rgba(18,14,14,0.54);
 	}
-}</style>
+}
+</style>
 
 		
-	
+						<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Spectral:300,400,500,600,700&display=swap" rel="stylesheet">
+					<link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+			
   	<link href="http://www.jylak.in/assets/theme.css" rel="stylesheet">
   
 	<style>
@@ -133,7 +135,7 @@ role="navigation" >
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand logo" href="index.html">
-												<img src="http://www.jylak.in/uploads/2019/05/step0002_313089427.png" class="img-responsive">
+												<img src="http://www.jylak.in/uploads/2019/05/Untitled-2_970235327.png" class="img-responsive">
 											</a>
 				</div>
 				<div class="navbar-collapse collapse menustyle4" id="navbar-menu">
@@ -199,7 +201,7 @@ role="navigation" >
 
 
 
-        <div class="is-section footer" id="row_84932" style="clear:both;background-color:rgba(16,1,1,0.99);background-image:url();color:rgba(255,255,255,1)"><div class="container"><div class="row customrow"><div class="customcol col-sm-4" id="col_357692"><div class="boxelement"><div class="element"><p><span>We are focused on our quest to deliver nothing but the best when it comes to digital marketing. We know what we do best. In fact, we have worked in corporates as professionals in the internet marketing space and bring that professionalism into our dealings with our clients.</span></p></div></div></div><div class="customcol col-sm-8" id="col_280291"><div class="boxelement"><div class="element"><div class="row">
+        <div class="is-section footer" id="row_84932" style="clear:both;background-color:rgba(1,13,128,0.99);background-image:url();color:rgba(255,255,255,1)"><div class="container"><div class="row customrow"><div class="customcol col-sm-4" id="col_357692"><div class="boxelement editing"><div class="element"><p><span>We are focused on our quest to deliver nothing but the best when it comes to digital marketing. We know what we do best. In fact, we have worked in corporates as professionals in the internet marketing space and bring that professionalism into our dealings with our clients.</span></p></div></div></div><div class="customcol col-sm-8" id="col_280291"><div class="boxelement"><div class="element"><div class="row">
 <div class="col-md-6 text-right">&nbsp;<span class="fa fa-facebook"></span><span class="fa fa-youtube-play"></span><span class="fa fa-google"></span></div>
 <div class="col-md-6">
 <h3>Sign up for our newsletter</h3>
@@ -222,7 +224,7 @@ role="navigation" >
 				<!-- Hubspot -->
 								
 				<!-- Hubspot -->
-				<input type="hidden" class="form-control" name="logo" value="http://www.jylak.in/uploads/2019/05/step0002_313089427.png">
+				<input type="hidden" class="form-control" name="logo" value="http://www.jylak.in/uploads/2019/05/Untitled-2_970235327.png">
 				<input type="hidden" class="form-control" name="url" value="http://www.jylak.in">
 				<input type="hidden" class="form-control" name="newsletter" value="http://www.jylak.in/newsletter/form_3_email">
 				<div class="form-group col-sm-12">
@@ -483,61 +485,14 @@ frame();
 initParticles(config.particleNumber);</script>
 
 //responsive Check
+
 <script>
 $(document).ready(function() {
 // Change iFrame on a Button Click Event
-    $(".button").click(function(event){
-        $("iframe").attr('src', $( '#url' ).val());
+    $(".text_widget_13 .btn").click(function(event){
+        $(".text_widget_12 iframe").attr('src', $( '#url' ).val());
     });
 });
-  </script>
-  <script>
-$(document).ready(function() {
-    var a = 3;
-    $('.desktop,.laptop,.tablet,.mobile').draggable({
-   start: function(event, ui) { $(this).css("z-index", a++); }
-});
-    $('.display_sive div').click(function() {
-        $(this).addClass('top').removeClass('bottom');
-        $(this).siblings().removeClass('top').addClass('bottom');
-        $(this).css("z-index", a++);
-    });
-});
-</script>
-
-<script>
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
-    });
-    return vars;
-}
-var first = getUrlVars()["url"]; 
-var first = decodeURIComponent(first);
-var first = first.replace(/\#$/, '');
-if(first === "undefined") {
-  // don't do anything.
-}
-else {
-//  take the url variable and update the iframes and input field
-  $(".display_sive iframe").attr('src',(first));
-  $('#url').attr('value',(first));
-}
-</script>
-
-
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<!-- Place this tag after the last +1 button tag. -->
-<script type="text/javascript">
-  window.___gcfg = {lang: 'en-GB'};
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
 </script>
 </body>
 </html>
