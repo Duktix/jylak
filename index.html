@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="anAA9a2PInO2hU6Hv6xdKE3xgHPhazkAbT4OWzrL">
+    <meta name="csrf-token" content="ZIe1LwEX3An5LFtHLrBEpQXT3xQ9yzYJSUizhc92">
 
 
 			<title></title>
@@ -45,18 +45,18 @@
 }
 .navbar-custom .navbar-nav li a{
 	background-color:rgba(255,255,255,0);
-	color:#000000;
+	color:#2570ff;
 }
 .navbar-custom .navbar-nav li:hover > a{
 	background-color:rgba(255,255,255,0);
-	color:#cc171e;
+	color:#f75f5f;
 }
 .navbar-custom .nav>li>a:focus, .navbar-custom .nav>li>a:hover, .navbar-custom .navbar-nav li.active a{
 	background-color:rgba(255,255,255,0);
-	color:#cc171e;
+	color:#f75f5f;
 }
 .sticky-wrapper.is-sticky .navbar-custom{
-	background-color:rgba(0,0,0,1);
+	background-color:rgba(255,255,255,1);
 }
 .sticky-wrapper.is-sticky .navbar-custom .navbar-nav li a{
 	color:rgba(0,0,0,1);
@@ -69,7 +69,7 @@
 }
 @media (max-width: 768px){
 	.navbar-collapse{
-		background-color:rgba(18,14,14,0.54);
+		background-color:rgba(219,25,212,0.54);
 	}
 }
 </style>
@@ -1154,6 +1154,124 @@ jQuery(document).ready(function(){
         </div>
 
     </div>
+
+<div class="is-section is-box is-section-auto is-align-center is-bg-dark is-light-text">
+
+        <div class="is-boxes">
+
+            <div class="is-box-centered">
+                <div class="is-container is-builder container-fluid" id="contentareaMXf6TvY" style=""><div class="row"><div class="widget form_widget form_widget_15">
+		<!-- Hubspot -->
+				<!-- Hubspot -->
+		
+		<div class="alert alert-success collapse" id="form_15_success"></div>
+		<form id="form_15" method="post" 
+		
+				
+		>
+								  <div class="form-group col-sm-12 
+				  				  				  ">
+										<label for="field_3137">What Is Your Budget</label>
+															<div class='html'><section id="content">
+  <h1>What is your budget?</h1>
+  <div class="cube">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div id="slider-range-min"></div>
+  </div>
+  <input type="text" id="amount" />
+</section>
+<script src="sizzle.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script></div>
+										<div class="help">What Is Your Budget</div>
+									  </div>
+								
+				
+				<!-- Hubspot -->
+								
+				<!-- Hubspot -->
+				<input type="hidden" class="form-control" name="logo" value="http://www.jylak.in/uploads/2019/05/Untitled-2_970235327.png">
+				<input type="hidden" class="form-control" name="url" value="http://www.jylak.in">
+				<input type="hidden" class="form-control" name="newsletter" value="http://www.jylak.in/newsletter/form_15_email">
+				<div class="form-group col-sm-12">
+				<button type="submit" class="btn btn-default ">Submit</button>
+				</div>
+		</form>
+	</div>
+<style>
+#form_15 .form-control{
+			background-color: rgba(255,255,255,1);
+				color: rgba(0,0,0,1);
+				border: 0;
+				border-color: rgba(255,255,255,1);
+				padding: 5px 10px;
+				font-size: 15px;
+		height: auto;
+}
+</style>
+<script>
+jQuery(document).ready(function(){
+	setInterval(function(){
+		jQuery('.checkboxgroup').each(function(){
+			var texts = '';
+			jQuery(this).find('input[type="checkbox"]').each(function(){
+				if(jQuery(this).is(':checked')){
+					texts = texts+jQuery(this).val()+', ';
+				}
+			})
+			jQuery(this).find('input[type="text"]').val(texts);
+		})
+	}, 100);
+	jQuery("#form_15").validate({
+		rules:{
+		  			"field_3137": {
+									required: true,
+							},
+		  		},
+		messages: {
+							"field_3137": {
+											required: "This field is required",
+									},
+					},
+		submitHandler: function(form) {
+			
+						
+							jQuery.ajax({
+						type: "POST",
+						url: "http://mx.frezit.com",
+						data: { data: jQuery('#form_15').serialize(), adminmail:'jbora201@gmail.com', recipients:'jbora201@gmail.com', from: 'jbora201@gmail.com', fromname: 'jylak', subject:'', replyto:'' },
+						dataType: "text",
+						success: function(resultData){
+							console.log(resultData);
+							if(resultData=='success'){
+																	jQuery('#form_15').find('button[type="submit"]').prop('disabled', true);
+									jQuery('#form_15_success').html('Please wait...');
+									jQuery('#form_15_success').addClass('in');
+									setTimeout(function(){ 
+										jQuery('#form_15_success').hide();
+										jQuery('#form_15_success').html('Thank you for your submission.');
+										jQuery('#form_15_success').fadeIn();
+										jQuery('#form_15').find('button[type="submit"]').prop('disabled', false);
+										jQuery('#form_15').trigger('reset');
+																			}, 1000);
+															}
+						}
+				});
+						
+			
+		}
+	});
+})
+</script>
+</div></div>
+            </div>
+
+        </div>
+    
+    </div>
 	</div>
 
 
@@ -1367,6 +1485,22 @@ $(document).ready(function() {
         $(".text_widget_12 iframe").attr('src', $( '#url' ).val());
     });
 });
-</script>
+ </script>
+ <script>
+$(function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 50,
+      min: 0,
+      max: 100,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.value + ",000");
+        $(".a, .b, .c, .d").width(ui.value + "%");
+      }
+    });
+    $(".ui-slider-handle").text("<>");
+    $( "#amount" ).val( "$" + $( "#slider-range-min" ).slider( "value") + ",000");
+  });
+  </script>
 </body>
 </html>
