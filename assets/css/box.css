@@ -9,7 +9,9 @@ body {height:100%;width:100%;padding:0;margin:0;overflow-x:hidden;}
 	-o-transition: all ease 0.5s;
 	transition: all ease 0.5s;
 }
-
+.is-footer{
+	height: auto;
+}
 /* Sections */
 .is-wrapper > div {
     display:table;

@@ -1477,6 +1477,10 @@ textarea.form-control {
     transition: all 0.2s ease-in-out;
 	z-index:10;
 }
+.navbar-nav>li.menu-item>ul.sub-menu>li{
+	position: relative;
+}
+
 .navbar-nav>li.menu-item:hover > ul.sub-menu{
 	visibility:visible;
 	opacity:1;
@@ -1800,6 +1804,7 @@ textarea.form-control {
 	.nav .sub-menu{
 		visibility:visible;
 		opacity:1;
+		    padding: 0;
 	}
 }
 @media (min-width: 992px) {
@@ -1814,4 +1819,12 @@ textarea.form-control {
     margin: 0;
     width: 180px;
 }
+.navbar-nav>li.menu-item>ul.sub-menu>li>ul.sub-menu{
+	top: 0;
+	left: 100%;
+}
+}
+.navbar-nav>li.menu-item> ul.sub-menu>li:hover ul.sub-menu{
+	opacity:1;
+	visibility: visible;
 }
